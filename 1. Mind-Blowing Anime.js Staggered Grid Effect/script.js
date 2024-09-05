@@ -24,7 +24,7 @@ const handleOnClick = index => {
             from: index
         })
     })
-}
+} 
 
 const createTile = index => {
     const tile = document.createElement('div');
@@ -49,6 +49,7 @@ const createGrid =  () => {
     rows = Math.floor(document.body.clientHeight / 50);
     wrapper.style.setProperty('--columns', columns);
     wrapper.style.setProperty('--rows', rows);
+   
     createTiles(columns * rows);
 }
 

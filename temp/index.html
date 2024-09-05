@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="tiles">
+    </div>
+    <script src="script.js"></script>
+    <script src="anime.js"></script>
+    <script>
+        document.querySelector('.css-selector-demo > .el').addEventListener('click', () => {
+            // console.log('xin chào');
+
+            anime({
+                targets: document.querySelector('.css-selector-demo > .el'),
+                translateX: {
+                    value: 250,
+                    duration: 800
+                },
+                rotate: {
+                    value: 360,
+                    duration: 1800,
+                    easing: 'easeInOutSine'
+                },
+                scale: {
+                    value: 2,
+                    duration: 1600,
+                    delay: 800,
+                    easing: 'easeInOutQuart'
+                },
+                delay: 250,
+                loop: true,
+                direction: 'alternate',
+                autoplay: true,
+            });
+            
+        })
+
+    </script>
+</body>
+
+</html>
